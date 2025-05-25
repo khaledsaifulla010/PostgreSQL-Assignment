@@ -17,4 +17,12 @@ CREATE TABLE species(
 );
 
 
-
+-- Sightings Table --
+CREATE TABLE sightings(
+    sighting_id SERIAL PRIMARY KEY,
+    species_id INT REFERENCES species(species_id),
+    ranger_id INT REFERENCES rangers(ranger_id),
+    sighting_time TIMESTAMP NOT NULL,
+    location VARCHAR(100) NOT NULL,
+    notes TEXT
+);
