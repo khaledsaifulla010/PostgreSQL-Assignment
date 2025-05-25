@@ -43,3 +43,11 @@ INSERT INTO species(species_id, common_name, scientific_name, discovery_date, co
 (3, 'Red Panda', 'Ailurus fulgens', '1825-01-01', 'Vulnerable'),
 (4, 'Asiatic Elephant', 'Elephas maximus indicus', '1758-01-01', 'Endangered');
 SELECT * FROM species
+
+-- Sightings Sample Data (INSERTS) --
+INSERT INTO sightings(sighting_id, species_id, ranger_id, sighting_time, location, notes) VALUES
+(1, 1, 1, '2024-05-10 07:45:00', 'Peak Ridge', 'Camera trap image captured'),
+(2, 2, 2, '2024-05-12 16:20:00', 'Bankwood Area', 'Juvenile seen'),
+(3, 3, 3, '2024-05-15 09:10:00', 'Bamboo Grove East', 'Feeding observed'),
+(4, 1, 2, '2024-05-18 18:30:00', 'Snowfall Pass', NULL);
+SELECT * FROM sightings
