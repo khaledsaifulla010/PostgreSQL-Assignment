@@ -26,3 +26,12 @@ CREATE TABLE sightings(
     location VARCHAR(100) NOT NULL,
     notes TEXT
 );
+
+
+-- Rangers Sample Data --
+INSERT INTO rangers(ranger_id, name, region) VALUES
+(1, 'Alice Green', 'Northern Hills'),
+(2, 'Bob White', 'River Delta'),
+(3, 'Carol King', 'Mountain Range');
+SELECT * FROM rangers
+
