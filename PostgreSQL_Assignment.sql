@@ -51,3 +51,9 @@ INSERT INTO sightings(sighting_id, species_id, ranger_id, sighting_time, locatio
 (3, 3, 3, '2024-05-15 09:10:00', 'Bamboo Grove East', 'Feeding observed'),
 (4, 1, 2, '2024-05-18 18:30:00', 'Snowfall Pass', NULL);
 SELECT * FROM sightings
+
+
+-------------------------------------------- Problem 1 --------------------------------------------
+INSERT INTO rangers ( ranger_id,name, region) VALUES
+(4,'Derek Fox', 'Coastal Plains');
+
