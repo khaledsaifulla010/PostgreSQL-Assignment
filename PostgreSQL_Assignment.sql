@@ -69,4 +69,10 @@ WHERE location ILIKE '%Pass%';
 SELECT r.name, COUNT(s.sighting_id) AS total_sightings
 FROM rangers r
 LEFT JOIN sightings s ON r.ranger_id=s.ranger_id
-GROUP BY r.name
+GROUP BY r.name;
+
+-------------------------------------------- Problem 5 --------------------------------------------
+SELECT s.common_name
+FROM species s
+LEFT JOIN sightings si ON s.species_id= si.species_id
+WHERE si.species_id IS NULL;
